@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Data Objek</title>
+</head>
+<body>
+    <h1>Jenis Roti</h1>
+
+    <table border = "1">
+        <tr>
+            <th>Merk</th>
+            <th>Varian</th>
+            <th>Harga</th>
+            <th>Descripsi</th>
+        </tr>
+        <tr>
+            <td><span id="merk"></span></td>
+            <td><span id="varian"></span></td>
+            <td><span id="harga"></span></td>
+            <td><span id="descripsi"></span></td>
+        </tr>
+    </table>
+
+    <script>
+        var roti = {
+            merk: "Buana",
+            varian: "Coklat",
+            harga: "20000",
+            descripsi: function(){
+                return this.merk + " yang enak rasa" + this.varian;  
+        }
+    }
+    // var nya dikasih sitak atau tulisan var atas diganti cons
+        console.table([roti]);     
+        document.getElementById("merk").innerHTML = roti.merk;
+        document.getElementById("varian").innerHTML = roti.varian;
+        document.getElementById("harga").innerHTML = roti.harga;
+        document.getElementById("descripsi").innerHTML = roti.descripsi();
+    </script>
+</body>
+</html>

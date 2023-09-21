@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+    <title>Operator Logika</title>
+</head>
+<body>
+    <h1>Operator Logika pada Javascript</h1>
+    <h2 id="logika"></h2>
+    <!-- Operator Logika ada 3 : &&, ||, ! -->
+    <!-- and, not, negasi -->
+    <script>
+        let nama = "Fathh";
+        let email = "azzf@gmail.com";
+        let pass = "3340";
+        let hasil;
+        // pass : password. kalo ngga sama kyk yang diatas maka yang keluar dikondisi kedua
+        if(email == "azzf@gmail.com" || pass == "3340") {
+            hasil = "Selamat Datang " + nama;
+        }else{
+            hasil = "Yhaa Ngga Bisa Masuk"
+        }
+        document.getElementById("logika").innerHTML = hasil;
+
+        // if(!email != "azzf@gmail.com"){
+        //     hasil = "betull";
+        // }else{
+        //     hasil = "salah";
+        // }
+
+        // document.getElementById("logika").innerHTML = hasil;
+
+    </script>
+</body>
+</html>

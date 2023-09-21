@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spotify</title>
+
+</head>
+<style>
+    body {
+      background-color: greenyellow;
+      background-image: url(img/logospotify.jpg);
+      background-size: 230px;
+    }
+    .a {
+      justify-content: center;
+      display: flex;
+    }
+    .card {
+      background-blend-mode: screen;
+      background-color: rgb(16, 15, 15);
+      max-width: 390px;
+      border-radius: 20px;
+      margin: auto;
+      margin-top: 210px;
+    }
+    img {
+      margin-bottom: 20px;
+      max-width: 90px;
+    }
+    input {
+      width: 48%;
+      text-align: center;
+      border-radius: 30px;
+      margin-left: 100px;
+      margin-bottom: 15px;
+      background-attachment: fixed;
+      background-color: greenyellow;
+      color: black;
+    }
+    </style>
+<body>
+  
+    <div class="card">
+      <div class="a">
+        <img src="img/logospotify.jpg"/>
+      </div>
+
+    <input placeholder="email" type="email" required value="" id="email"><br><br>
+    <input placeholder="password" type="password" required value="" id="password"><br><br>
+    <input onclick="login()" type="button" value="Login" style="width: 50%;">
+
+    <script>
+    var user = {
+        nama: "Fath",
+        email: "azzf@gmail.com",
+        password: "3340",
+        role: "admin"
+    }
+    
+    function login() {
+        var email = document.getElementById("email").value;
+        var password = document.getElementById("password").value;
+    
+        console.log(email);
+        if(user.email == email) {
+            if(user.password == password) {
+                if(user.role == "admin") {
+                window.location.href = "https://open.spotify.com/";
+                alert("Selamat Datang" + user.nama);
+                }
+            } else {
+                alert("Tidak Bisa Masuk");
+                } 
+            } else {
+                alert("Bukan Admin Woiii");
+                }
+    }
+    </script>
+</body>
+</html>

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tipe Data</title>
+  </head>
+  <body>
+    <h1>Tipe Data pada Javascript</h1>
+    <!-- String = teks
+    Number = Nomor
+Boolen = True atau False
+Array = Banyak Data -->
+    <h2 id="number"></h2>
+    <h2 id="string"></h2>
+    <h2 id="boolean"></h2>
+    <h2 id="array"></h2>
+
+    <script>
+      // desimal atau tiik pada angka namanya flute 40.4
+      //   tidak boleh diawali dengan angka 0 atau okta
+      var dataNumber = "20";
+      var number;
+
+      console.log(dataNumber);
+      document.getElementById("number").innerHTML = dataNumber;
+
+      //     escape character :
+      //    \' -> '
+      //    \" -> ""
+      //    \n -> enter atau line baru
+      //    \t -> tab
+      //    \b -> simbol kotak
+      //    \u00AE -> bulet dalemnya tulisan R
+      //     toUppercase -> besarin semua kata
+      //     toLowercase -> ngecilin semua kata
+      //     lenght -> buat ngitung ada berapa huruf
+      //     repeat(3) -> ngulang atau ngebanyakin
+      //     slice(4) -> buat motong huruf
+      //   replace("m", "l")
+      var dataString = "Mahasiswi Programmer";
+
+      console.log(dataString.length);
+      document.getElementById("string").innerHTML = dataString.length;
+
+      // Boolean -> true atau false
+      var dataBoolean = true;
+
+      console.log(dataBoolean);
+      document.getElementById("boolean").innerHTML = dataBoolean;
+
+      // Array -> bisa nyimpan banyak data apapun tipenya
+      var dataArray = ["fath", 2, true, 40.5];
+
+      console.log(dataArray);
+      document.getElementById("array").innerHTML = dataArray;
+    </script>
+  </body>
+</html>
